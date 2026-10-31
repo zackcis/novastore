@@ -1,0 +1,24 @@
+.order-layout { display: grid; grid-template-columns: 1.5fr 1fr; gap: 55px; align-items: start; }
+.order-form { padding: 32px; background: #fffefa; border: 1px solid #dce1d3; border-radius: 8px; }
+.form-section-heading { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+.form-section-heading span { display: grid; place-items: center; border: 1px solid #d6dfca; border-radius: 50%; width: 28px; height: 28px; font-size: .6rem; }
+.form-section-heading h2 { font-size: 1.15rem; letter-spacing: -.02em; margin: 0; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 15px; }
+.order-form label { display: flex; flex-direction: column; gap: 9px; font-size: .75rem; font-weight: 500; margin-bottom: 20px; }
+.order-form input, .order-form select { width: 100%; min-width: 0; background: #fbfcf7; border: 1px solid #d6ddce; border-radius: 4px; padding: 12px; color: #234236; font-size: .82rem; }
+.order-form input::placeholder { color: #91988a; }
+.order-form input[type=number] { max-width: 135px; }
+.field-help { color: #7d8775; font-size: .67rem; margin-block: -8px 24px; }
+.form-note { display: flex; align-items: center; gap: 14px; padding: 14px; background: #edf1e5; border-radius: 5px; margin-block: 25px; }
+.form-note > span { color: #557443; font-size: 1.6rem; }
+.form-note p { font-size: .72rem; margin: 0; color: #55704c; }
+.submit-button { width: 100%; justify-content: space-between; margin-bottom: 22px; }
+.order-form > .field-help:last-child { margin-bottom: 0; }
+.order-aside { padding: 35px; background: #e9eddf; border-radius: 8px; }
+.order-aside h2 { font-size: 2.2rem; }
+.order-aside ol { padding-left: 18px; font-size: .82rem; color: #55684e; line-height: 2.5; }
+.discount-note { border-top: 1px solid #cbd5bc; padding-top: 23px; margin-top: 25px; font-size: .83rem; }
+.discount-note p { font-size: .78rem; margin-top: 7px; }
+.demo-note { font-size: .67rem; margin-bottom: 0; margin-top: 28px; }
+@media (max-width: 960px) { .order-layout { gap: 25px; grid-template-columns: 1.5fr 1fr; } .order-form, .order-aside { padding: 24px; } .form-row { grid-template-columns: 1fr; gap: 0; } }
+@media (max-width: 760px) { .order-layout { grid-template-columns: 1fr; } }

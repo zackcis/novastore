@@ -1,0 +1,22 @@
+/* Specific classes prevent accidental changes to headings on other pages. */
+.products-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.product-card { border: 1px solid #e2e5db; border-radius: 8px; overflow: hidden; background: #fffefa; }
+.product-card.is-unavailable { background: #f1f0eb; }
+.product-image { background: #f0f1e8; position: relative; overflow: hidden; }
+.product-image img { width: 100%; aspect-ratio: 5 / 4; object-fit: contain; }
+.is-unavailable .product-image img { opacity: .6; }
+.badge { position: absolute; top: 16px; left: 16px; color: #33522e; background: #fffef4; border-radius: 3px; padding: 5px 9px; font-size: .62rem; }
+.product-info { padding: 22px; }
+.product-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-size: .62rem; margin-bottom: 13px; color: #808775; }
+.stock::before { content: ''; display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: currentColor; margin-right: 5px; vertical-align: middle; }
+.in-stock { color: #47714d; }
+.out-of-stock { color: #986c53; }
+.product-info h3 { margin-bottom: 12px; }
+.product-price { font-size: .87rem; font-weight: 600; color: #1b3c2e; margin-bottom: 23px; }
+.product-actions { display: flex; gap: 8px; }
+.product-actions .button { flex: 1; padding: 12px 8px; font-size: .7rem; }
+.collection-heading { display: flex; justify-content: space-between; padding-block: 12px; border-top: 1px solid #d9dfcf; margin-bottom: 28px; font-size: .75rem; }
+/* The home page's two featured cards use the full width. */
+.section-heading + .products-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 1000px) { .products-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 580px) { .products-grid, .section-heading + .products-grid { grid-template-columns: 1fr; } }

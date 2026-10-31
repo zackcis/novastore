@@ -1,0 +1,21 @@
+.announcement { text-align: center; background: #193f34; color: #ebeee2; font-size: .67rem; letter-spacing: .07em; padding: 9px 15px; }
+.site-header { border-bottom: 1px solid #e3e6db; background: #fbfaf7; }
+.navbar { min-height: 88px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand { display: flex; align-items: flex-start; line-height: 1; font-size: 2rem; font-weight: 800; letter-spacing: -.07em; }
+.brand span { font-size: .65rem; margin: 2px 5px 0; }
+.brand small { align-self: center; border-left: 1px solid #b7c0b7; padding-left: 12px; margin-left: 6px; font-size: .55rem; letter-spacing: .17em; font-weight: 500; }
+.navbar nav { display: flex; gap: 28px; align-items: center; font-size: .8rem; }
+.navbar nav > a { padding-block: 9px; }
+.navbar nav > a.active { color: #245e42; box-shadow: 0 2px #245e42; }
+.navbar nav > a:hover { color: #42825e; }
+.navbar nav .nav-order { border: 1px solid #c7cec2; border-radius: 5px; padding: 12px 18px; margin-left: 25px; }
+.nav-order span { margin-left: 18px; }
+.site-footer { background: #edf0e6; padding-top: 55px; }
+.footer-top { display: grid; grid-template-columns: 2fr 1fr 1.3fr; gap: 40px; padding-bottom: 48px; }
+.footer-brand { font-size: 1.6rem; font-weight: 800; letter-spacing: -.07em; }
+.footer-top p { font-size: .82rem; margin-top: 10px; }
+.footer-top > div { display: flex; flex-direction: column; gap: 8px; font-size: .8rem; }
+.footer-top strong { margin-bottom: 8px; font-weight: 600; }
+.footer-top a:hover { text-decoration: underline; }
+.footer-bottom { border-top: 1px solid #d5dccf; display: flex; justify-content: space-between; gap: 20px; font-size: .68rem; color: #6b7769; padding-block: 20px; }
+@media (max-width: 760px) { .navbar { flex-wrap: wrap; gap: 18px; padding-block: 20px; } .navbar nav { width: 100%; gap: 20px; justify-content: space-between; font-size: .73rem; } .navbar nav .nav-order { margin-left: 0; padding: 9px; } .nav-order span { margin-left: 6px; } .footer-top { grid-template-columns: 1fr 1fr; gap: 25px; } .footer-top > div:first-child { grid-column: 1 / -1; } .footer-bottom { flex-direction: column; gap: 6px; } }
